@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vela</title>
+</head>
+
+<body>
+    <div id="sprite-container" style="display: none;"></div>
+    <header class="header" id="mainHeader">
+        <div class="header-bg">
+            <div class="header-top">
+                <div class="header-top-left">
+                    <a class="header-top-left__link" href="#">
+                        <svg class="header-top-left__icon">
+                            <use href="#geo"></use>
+                        </svg>
+                        <span>Сайлент-Хилл</span>
+                    </a>
+                    <a class="header-top-left__link" href="tel:+75555553750">
+                        <svg class="header-top-left__icon">
+                            <use href="#phone"></use>
+                        </svg>
+                        +7 555 555-37-50
+                    </a>
+                </div>
+                <p class="header-top__center">
+                    <span>Ежедневно</span> 9:00 — 21:00
+                </p>
+                <div class="header-top-right">
+                    <a class="header-top-right__link" href="#">Доставка</a>
+                    <a class="header-top-right__link" href="#">Оплата</a>
+                    <a class="header-top-right__link" href="#">Контакты</a>
+                </div>
+            </div>
+            <div class="header-block-mob-top">
+                    <div class="header-wrap-top-globe header-wrap-top-globe-mob">
+                        <svg>
+                            <use href="#globe"></use>
+                        </svg>
+                        <span class="header-wrap-top-globe__language header-wrap-top-globe__language_active">RU</span>
+                        <span class="header-wrap-top-globe__stick"></span>
+                        <span class="header-wrap-top-globe__language">EN</span>
+                    </div>
+                    <a class="header-top-left__link" href="tel:+75555553750">
+                        <svg class="header-top-left__icon">
+                            <use href="#phone"></use>
+                        </svg>
+                        +7 555 555-37-50
+                    </a>
+                </div>
+        </div>
+        <div class="container">
+            <div class="header-block">
+                <img src="img/logo.svg" alt="logo" class="header-block__icon">
+                <div class="header-wrap">
+                    <div class="header-wrap-top">
+                        <div class="header-wrap-top__burger">
+                            <span></span>
+                        </div>
+                        <div class="header-wrap-top-search">
+                            <input type="text" name="search" placeholder="Поиск товаров...">
+                            <button>Найти</button>
+                        </div>
+                        <a href="#" class="header-wrap-top__link_grey">
+                            <svg>
+                                <use href="#telegram"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="header-wrap-top__link_grey margin-0">
+                            <svg>
+                                <use href="#whatsap"></use>
+                            </svg>
+                        </a>
+                        <div class="header-wrap-top-globe">
+                            <svg>
+                                <use href="#globe"></use>
+                            </svg>
+                            <span class="header-wrap-top-globe__language header-wrap-top-globe__language_active">RU</span>
+                            <span class="header-wrap-top-globe__stick"></span>
+                            <span class="header-wrap-top-globe__language">EN</span>
+                        </div>
+                        <ul class="header-wrap-top__list">
+                            <li class="header-wrap-top__item">
+                                <a href="#" class="header-wrap-top__link">
+                                    <svg>
+                                        <use href="#heart"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header-wrap-top__item">
+                                <a href="#" class="header-wrap-top__link">
+                                    <svg>
+                                        <use href="#hunter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header-wrap-top__item">
+                                <a href="#" class="header-wrap-top__link">
+                                    <svg>
+                                        <use href="#chest"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-wrap-bottom">
+                        <ul class="header-wrap-bottom__list">
+                            <li class="header-wrap-bottom__item">
+                                <a href="#" class="header-wrap-bottom__link js-toggle-submenu">
+                                    <svg>
+                                        <use href="#fire"></use>
+                                    </svg>
+                                    Акции
+                                </a>
+                                <ul class="submenu submenu--promo special-group">
+                                    <li class="submenu__item">
+                                        <a href="#" class="js-toggle-submenu">
+                                            <svg class="submenu__icon">
+                                                <use href="#phone_rud"></use>
+                                            </svg>
+                                            <span>Смартфоны и гаджеты</span>
+                                            <span class="submenu__icon_arrow"></span>
+                                        </a>
+                                        <div class="submenu-2 special-item">
+                                            <div>
+                                                <h3 class="submenu-2__title">
+                                                    Смартфоны
+                                                </h3>
+                                                <ul class="submenu-2__list">
+                                                    <li>
+                                                        <a href="#">
+                                                            Apple iPhone <span>123</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Смартфоны <span>227</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            iPhone 16 <span>120</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Складные <span>30</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            realme <span>120</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Huawei Mate X6 <span>100</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Кнопочные <span>23</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Домашние <span>17</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Samsung <span>27</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h3 class="submenu-2__title">
+                                                    Гаджеты
+                                                </h3>
+                                                <ul class="submenu-2__list">
+                                                    <li>
+                                                        <a href="#">
+                                                            Смарт-часы <span>15</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Смарт-кольца <span>34</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Наушники <span>21</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Гарнитуры <span>12</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Портативное аудио <span>42</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Умные гаджеты <span>46</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Очки VR 49 <span>49</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Для блогеров <span>32</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="#">
+                                            <svg class="submenu__icon">
+                                                <use href="#laptop"></use>
+                                            </svg>
+                                            <span>Ноутбуки и компьютеры</span>
+                                            <span class="submenu__icon_arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="#">
+                                            <svg class="submenu__icon">
+                                                <use href="#tv"></use>
+                                            </svg>
+                                            <span>Телевизоры и цифровое ТВ</span>
+                                            <span class="submenu__icon_arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="#">
+                                            <svg class="submenu__icon">
+                                                <use href="#speaker"></use>
+                                            </svg>
+                                            <span>Аудиотехника</span>
+                                            <span class="submenu__icon_arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="#">
+                                            <svg class="submenu__icon">
+                                                <use href="#sale"></use>
+                                            </svg>
+                                            <span>Акции</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="#">
+                                            <svg class="submenu__icon">
+                                                <use href="#new"></use>
+                                            </svg>
+                                            <span>Новинки</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header-wrap-bottom__item">
+                                <a href="#" class="header-wrap-bottom__link js-toggle-submenu">
+                                    <svg>
+                                        <use href="#lightning"></use>
+                                    </svg>
+                                    Горячее предложение
+                                </a>
+                                <ul class="submenu submenu--promo auto-height">
+                                    <li class="submenu__item">
+                                        <a href="#" class="js-toggle-submenu">
+                                            <svg class="submenu__icon">
+                                                <use href="#peoples"></use>
+                                            </svg>
+                                            <span>Кому</span>
+                                            <span class="submenu__icon_arrow"></span>
+                                        </a>
+                                        <div class="submenu-2 auto-height">
+                                            <div>
+                                                <h3 class="submenu-2__title">
+                                                    Кому
+                                                </h3>
+                                                <ul class="submenu-2__list">
+                                                    <li>
+                                                        <a href="#">
+                                                            Для мужчин <span>123</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Для женщин <span>63</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Папе <span>120</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Сотрудникам <span>30</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Мужу <span>120</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Корпоративный <span>100</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="#">
+                                            <svg class="submenu__icon">
+                                                <use href="#adventure"></use>
+                                            </svg>
+                                            <span>Повод</span>
+                                            <span class="submenu__icon_arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="#">
+                                            <svg class="submenu__icon">
+                                                <use href="#computer"></use>
+                                            </svg>
+                                            <span>Наполнение</span>
+                                            <span class="submenu__icon_arrow"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header-wrap-bottom__item">
+                                <a href="#" class="header-wrap-bottom__link js-toggle-submenu">
+                                    <svg>
+                                        <use href="#chest_2"></use>
+                                    </svg>
+                                    Подарочные наборы
+                                </a>
+                            </li>
+                            <li class="header-wrap-bottom__item">
+                                <a href="#" class="header-wrap-bottom__link js-toggle-submenu">
+                                    <svg>
+                                        <use href="#quest"></use>
+                                    </svg>
+                                    События
+                                </a>
+                                <ul class="submenu submenu--promo">
+                                    <li>
+                                        <a href="#">
+                                            <span>ИгроМИР</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Мероприятия</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Мастер-классы</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header-wrap-bottom__item">
+                                <a href="#" class="header-wrap-bottom__link js-toggle-submenu">
+                                    <svg>
+                                        <use href="#orc"></use>
+                                    </svg>
+                                    Наши бренды
+                                </a>
+                            </li>
+                        </ul>
+                        <button class="header-wrap-bottom__btn">
+                            + Собрать компьютер
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="header-block-mob">
+                <div class="header-block-mob-wrap">
+                    <div class="header-block-mob-wrap-top">
+                        <div class="header-block-mob-wrap-top-left">
+                            <div class="header-wrap-top__burger burger-mob">
+                                <span></span>
+                            </div>
+                            <a href="#" class="header-block-mob-wrap-top__link">
+                                <svg>
+                                    <use href="#hunter"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <img src="img/logo.svg" alt="logo" class="header-block__icon">
+                        <div class="header-block-mob-wrap-top-right">
+                            <a href="#" class="header-block-mob-wrap-top__link mr">
+                                <svg>
+                                    <use href="#heart"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="header-block-mob-wrap-top__link">
+                                <svg>
+                                    <use href="#chest"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-block-mob-wrap-bottom">
+                        <div class="header-wrap-top-search">
+                            <input type="text" name="search" placeholder="Поиск товаров...">
+                            <button>
+                                <svg>
+                                    <use href="#search"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-mob">
+                    <div class="menu-mob-top">
+                        <div class="menu-mob-top-geo">
+                            <p>
+                                <svg>
+                                    <use href="#geo-mob"></use>
+                                </svg>
+                                г.Москва
+                            </p>
+                            <p class="margin-0">
+                                <svg>
+                                    <use href="#time"></use>
+                                </svg>
+                                Ежедневно 9:00 — 21:00
+                            </p>
+                        </div>
+                        <div class="menu-mob-top-social">
+                            <a href="#">
+                                <svg>
+                                    <use href="#telegram"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="margin-0">
+                                <svg>
+                                    <use href="#whatsap"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="header-wrap-bottom__list">
+                        <li class="header-wrap-bottom__item">
+                            <a href="#" class="header-wrap-bottom__link submenu-toggle-mob">
+                                <svg>
+                                    <use href="#fire"></use>
+                                </svg>
+                                Акции
+                                <span class="submenu__icon_arrow"></span>
+                            </a>
+                            <ul class="submenu submenu--promo special-group">
+                                <li class="submenu__item header-wrap-bottom__item">
+                                    <a href="#" class="js-toggle-submenu submenu-toggle-mob">
+                                        <svg class="submenu__icon">
+                                            <use href="#phone_rud"></use>
+                                        </svg>
+                                        <span>Смартфоны и гаджеты</span>
+                                        <span class="submenu__icon_arrow"></span>
+                                    </a>
+                                    <ul class="submenu special-group">
+                                        <li class="header-wrap-bottom__item">
+                                            <a href="#">
+                                                Apple iPhone <span>123</span>
+                                            </a>
+                                        </li>
+                                        <li class="header-wrap-bottom__item">
+                                            <a href="#" class="submenu-toggle-mob">
+                                                Смартфоны <span>227</span>
+                                                <span class="submenu__icon_arrow"></span>
+                                            </a>
+                                            <ul class="submenu special-group">
+                                                <li class="header-wrap-bottom__item">
+                                                    <a href="#">
+                                                        Смарт-часы <span>15</span>
+                                                    </a>
+                                                </li>
+                                                <li class="header-wrap-bottom__item">
+                                                    <a href="#">
+                                                        Смарт-кольца <span>34</span>
+                                                    </a>
+                                                </li>
+                                                <li class="header-wrap-bottom__item">
+                                                    <a href="#">
+                                                        Наушники <span>21</span>
+                                                    </a>
+                                                </li>
+                                                <li class="header-wrap-bottom__item">
+                                                    <a href="#">
+                                                        Гарнитуры <span>12</span>
+                                                    </a>
+                                                </li>
+                                                <li class="header-wrap-bottom__item">
+                                                    <a href="#">
+                                                        Портативное аудио <span>42</span>
+                                                    </a>
+                                                </li>
+                                                <li class="header-wrap-bottom__item">
+                                                    <a href="#">
+                                                        Умные гаджеты <span>46</span>
+                                                    </a>
+                                                </li>
+                                                <li class="header-wrap-bottom__item">
+                                                    <a href="#">
+                                                        Очки VR 49 <span>49</span>
+                                                    </a>
+                                                </li>
+                                                <li class="header-wrap-bottom__item">
+                                                    <a href="#">
+                                                        Для блогеров <span>32</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="header-wrap-bottom__item">
+                                            <a href="#">
+                                                iPhone 16 <span>120</span>
+                                            </a>
+                                        </li>
+                                        <li class="header-wrap-bottom__item">
+                                            <a href="#">
+                                                Складные <span>30</span>
+                                            </a>
+                                        </li>
+                                        <li class="header-wrap-bottom__item">
+                                            <a href="#">
+                                                realme <span>120</span>
+                                            </a>
+                                        </li>
+                                        <li class="header-wrap-bottom__item">
+                                            <a href="#">
+                                                Huawei Mate X6 <span>100</span>
+                                            </a>
+                                        </li>
+                                        <li class="header-wrap-bottom__item">
+                                            <a href="#">
+                                                Кнопочные <span>23</span>
+                                            </a>
+                                        </li>
+                                        <li class="header-wrap-bottom__item">
+                                            <a href="#">
+                                                Домашние <span>17</span>
+                                            </a>
+                                        </li>
+                                        <li class="header-wrap-bottom__item">
+                                            <a href="#">
+                                                Samsung <span>27</span>
+                                            </a>
+                                        </li>
+                                    </ul>    
+                                </li>
+                                <li class="submenu__item header-wrap-bottom__item">
+                                    <a href="#">
+                                        <svg class="submenu__icon">
+                                            <use href="#laptop"></use>
+                                        </svg>
+                                        <span>Ноутбуки и компьютеры</span>
+                                        <span class="submenu__icon_arrow"></span>
+                                    </a>
+                                </li>
+                                <li class="submenu__item header-wrap-bottom__item">
+                                    <a href="#">
+                                        <svg class="submenu__icon">
+                                            <use href="#tv"></use>
+                                        </svg>
+                                        <span>Телевизоры и цифровое ТВ</span>
+                                        <span class="submenu__icon_arrow"></span>
+                                    </a>
+                                </li>
+                                <li class="submenu__item header-wrap-bottom__item">
+                                    <a href="#">
+                                        <svg class="submenu__icon">
+                                            <use href="#speaker"></use>
+                                        </svg>
+                                        <span>Аудиотехника</span>
+                                        <span class="submenu__icon_arrow"></span>
+                                    </a>
+                                </li>
+                                <li class="submenu__item header-wrap-bottom__item">
+                                    <a href="#">
+                                        <svg class="submenu__icon">
+                                            <use href="#sale"></use>
+                                        </svg>
+                                        <span>Акции</span>
+                                    </a>
+                                </li>
+                                <li class="submenu__item header-wrap-bottom__item">
+                                    <a href="#">
+                                        <svg class="submenu__icon">
+                                            <use href="#new"></use>
+                                        </svg>
+                                        <span>Новинки</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-wrap-bottom__item">
+                            <a href="#" class="header-wrap-bottom__link submenu-toggle-mob">
+                                <svg>
+                                    <use href="#lightning"></use>
+                                </svg>
+                                Горячее предложение
+                                <span class="submenu__icon_arrow"></span>
+                            </a>
+                            <ul class="submenu special-group">
+                                <li class="submenu__item header-wrap-bottom__item">
+                                    <a href="#" class="js-toggle-submenu submenu-toggle-mob">
+                                        <svg class="submenu__icon">
+                                            <use href="#peoples"></use>
+                                        </svg>
+                                        <span>Кому</span>
+                                        <span class="submenu__icon_arrow"></span>
+                                    </a>
+                                    <ul class="submenu submenu-2__list special-group">
+                                        <li class="header-wrap-bottom__item">
+                                            <a href="#">
+                                                Для мужчин <span>123</span>
+                                            </a>
+                                        </li>
+                                        <li class="header-wrap-bottom__item">
+                                            <a href="#">
+                                                Для женщин <span>63</span>
+                                            </a>
+                                        </li>
+                                        <li class="header-wrap-bottom__item">
+                                            <a href="#">
+                                                Папе <span>120</span>
+                                            </a>
+                                        </li>
+                                        <li class="header-wrap-bottom__item">
+                                            <a href="#">
+                                                Сотрудникам <span>30</span>
+                                            </a>
+                                        </li>
+                                        <li class="header-wrap-bottom__item">
+                                            <a href="#">
+                                                Мужу <span>120</span>
+                                            </a>
+                                        </li>
+                                        <li class="header-wrap-bottom__item">
+                                            <a href="#">
+                                                Корпоративный <span>100</span>
+                                            </a>
+                                        </li>
+                                    </ul>    
+                                </li>
+                                <li class="submenu__item header-wrap-bottom__item">
+                                    <a href="#">
+                                        <svg class="submenu__icon">
+                                            <use href="#adventure"></use>
+                                        </svg>
+                                        <span>Повод</span>
+                                        <span class="submenu__icon_arrow"></span>
+                                    </a>
+                                </li>
+                                <li class="submenu__item header-wrap-bottom__item">
+                                    <a href="#">
+                                        <svg class="submenu__icon">
+                                            <use href="#computer"></use>
+                                        </svg>
+                                        <span>Наполнение</span>
+                                        <span class="submenu__icon_arrow"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-wrap-bottom__item">
+                            <a href="#" class="header-wrap-bottom__link submenu-toggle-mob">
+                                <svg>
+                                    <use href="#chest_2"></use>
+                                </svg>
+                                Подарочные наборы
+                                <span class="submenu__icon_arrow"></span>
+                            </a>
+                        </li>
+                        <li class="header-wrap-bottom__item">
+                            <a href="#" class="header-wrap-bottom__link submenu-toggle-mob">
+                                <svg>
+                                    <use href="#quest"></use>
+                                </svg>
+                                События
+                                <span class="submenu__icon_arrow"></span>
+                            </a>
+                            <ul class="submenu special-group">
+                                <li class="header-wrap-bottom__item">
+                                    <a href="#">
+                                        <span>ИгроМИР</span>
+                                    </a>
+                                </li>
+                                <li class="header-wrap-bottom__item">
+                                    <a href="#">
+                                        <span>Мероприятия</span>
+                                    </a>
+                                </li>
+                                <li class="header-wrap-bottom__item">
+                                    <a href="#">
+                                        <span>Мастер-классы</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-wrap-bottom__item">
+                            <a href="#" class="header-wrap-bottom__link submenu-toggle-mob">
+                                <svg>
+                                    <use href="#orc"></use>
+                                </svg>
+                                Наши бренды
+                                <span class="submenu__icon_arrow"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="header-block-mob-bottom">
+                        <button class="header-block-mob-bottom__btn">
+                            + Собрать компьютер
+                        </button>
+                        <ul class="header-block-mob-bottom__list">
+                            <li>
+                                <a href="#">Доставка</a>
+                            </li>
+                            <li>
+                                <a href="#">Оплата</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="s1">
+            <div class="s1-container">
+                <div class="s1-content">
+                    <h1 class="s1-content__title">
+                        Отправляйся в приключения с нашими эпическими лут-корзинами и наборами!
+                    </h1>
+                    <p class="s1-content__desc">
+                        Развивай свои навыки, следуя мудрым стратегиям мастеров, и поднимайся на новый уровень мастерства! С нашей поддержкой каждое твое действие станет частью великого искусства, а победы — результатом точного плана и безупречной подготовки!
+                    </p>
+                    <a href="#" class="s1-content__link">
+                        В каталог
+                    </a>
+                </div>
+                <picture>
+                    <source srcset="img/gamepad-mob.png" type="image/png" media="(max-width: 768px)">
+                    <img src="img/gamepad.png" alt="gamepad" class="s1__img">
+                </picture>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

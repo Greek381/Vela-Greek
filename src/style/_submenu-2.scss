@@ -1,0 +1,50 @@
+.submenu-2 {
+    position: absolute;
+    top: 0;
+    left: 340px;
+    padding: 17px 0;
+    min-width: 550px;
+    max-height: min(306px, calc(100vh - 150px));
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 30px;
+    visibility: hidden;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    background: #ffffff;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 -4px 10px -4px rgba(157, 157, 157, 0.35);
+    overflow-y: auto;
+    z-index: 100;
+    &__title {
+        padding-left: 30px;
+        margin: 0 0 20px;
+        font-weight: 400;
+        font-size: 30px;
+        color: #343a3f;
+    }
+    &__list li:hover {
+        background: #ffffff;
+        & a,
+        & a span {
+            color: #4888ff;
+        }
+    }
+    &__list li a span {
+        margin-left: 10px;
+        font-size: 14px;
+        color: rgba(52, 58, 63, 0.5);
+    }
+}
+
+.submenu-2.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.submenu__item:hover .submenu-2 {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}

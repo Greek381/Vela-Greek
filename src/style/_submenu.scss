@@ -1,0 +1,74 @@
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: auto;
+    padding: 17px 0;
+    min-width: 340px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    background: #ffffff;
+    border-radius: 8px 0 0 8px;
+    box-shadow: 0 0 10px 0 rgba(157, 157, 157, 0.35);
+    z-index: 100;
+    & li {
+        padding: 13px 20px 13px 30px;
+        border-bottom: 1px solid #f3f3f3;
+        &:hover {
+            background: #f3f3f3;
+            & a svg {
+                fill: rgba(72, 136, 255, 1);
+                stroke: rgba(72, 136, 255, 1);
+            }
+            & .submenu__icon_arrow {
+                background: #4888ff;
+            }
+        }
+        & a {
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            font-size: 16px;
+            color: #343a3f;
+        }
+    } 
+    &__icon {
+        margin: 0 16px 0 0;
+        width: 24px;
+        height: 24px;
+        fill: rgba(72, 136, 255, .5);
+        &_arrow {
+            position: relative;
+            top: -3px;
+            margin: 0 0 0 auto!important;
+            display: block;
+            width: 10px;
+            height: 1px;
+            background: #343A3F;
+            transform: rotate(45deg);
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                left: 5px;
+                width: 10px;
+                height: 1px;
+                background: inherit;
+                transform: rotate(-90deg);
+            }
+        }
+    }
+}
+
+.submenu.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.header-wrap-bottom__item:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}

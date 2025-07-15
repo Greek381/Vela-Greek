@@ -1,0 +1,48 @@
+.s1 {
+    background: linear-gradient(135deg, #672870 20%, #4fe0ff 100%);
+    &-container {
+        position: relative;
+        padding: 0 100px;
+        margin: 0 auto;
+        max-width: 1240px;
+        z-index: 1;
+    }
+    &-content {
+        padding: 84px 0;
+        max-width: 730px;
+        &__title {
+            margin: 0 0 25px;
+            font-family: "Tenor Sans", sans-serif;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 112%;
+            color: #ffffff;
+        }
+        &__desc {
+            margin: 0 0 25px;
+            font-family: "Tenor Sans", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 133%;
+            color: #ffffff;
+        }
+        &__link {
+            padding: 16px 40px;
+            display: block;
+            width: max-content;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 125%;
+            text-align: center;
+            color: #672870;
+            border-radius: 8px;
+            background: #ffffff;
+        }
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
